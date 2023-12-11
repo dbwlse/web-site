@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body li{
+            margin: 10px;
+            margin-bottom: 20px;
+            display: inline-block;
+            margin-top: 0px;
+        }
+
+        #test{
+            display: inline-block;
+            
+        }
+
+        body select{
+            margin-left: 50px;
+        }
+
+        input[type=text]{
+            margin-left: 10px;
+        }
+
+        img {
+            opacity: 1.0;
+        }
+        
+        img:hover {
+            opacity: 0.4;
+        }
+
+        #test{
+        color: bisque;
+        font-size: 30px;
+        margin-top: -20px;
+        margin-bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <form action="">
+        <select name="종류">
+            <option value="전체" selected>전체</option>
+            <option value="한식">한식</option>
+            <option value="중식">중식</option>
+            <option value="일식">일식</option>
+            <option value="양식">양식</option>
+            <option value="간식">간식</option>
+            <option value="베이킹">베이킹</option>
+        </section>
+    </form><br>
+    
+    <input type="text" name="name">
+    <button>검색</button>
+
+    <ul>
+        <li>
+        <div class="card">
+            <img src="음식.jpg" width="300" height="300">
+            <h3>어니언링<p id="test" onclick="func()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♥</p></h3>
+            <p>동그란 모양에 바삭한 식감이 매력적인</p>
+        </div>
+        </li>
+
+        <li>
+            <div class="card">
+                <a href="마늘빵.html"><img src="음식2.jpg" width="300" height="300"></a>
+                <h3>마늘빵<p id="test" onclick="func()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♥</p></h3>
+                <p>마늘을 사랑하는 한국인의 입맛 저격하는</p>
+            </div>
+        </li>
+
+        <li>
+            <div class="card">
+                 <img src="음식3.jpg" width="300" height="300">
+                 <h3>고구마 말랭이<p id="test" onclick="func()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♥</p></h3>
+                 <p>쫀득한 식감과 달달한 맛을 품은</p>
+            </div>
+        </li>
+
+        <li>
+            <div class="card">
+                 <img src="음식6.jpg" width="300" height="300">
+                 <h3>경양식 돈까스<p id="test" onclick="func()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♥</p></h3>
+                 <p>바삭한 식감과 새콤달콤한 소스의 조합</p>
+            </div>
+        </li>
+        <br><br>
+        <li>
+            <div class="card">
+                  <img src="음식5.jpg" width="300" height="300">
+                  <h3>두부조림<p id="test" onclick="func()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♥</p></h3>
+                 <p>꾸준히 사랑 받는 밥 반찬 메뉴인</p>
+            </div>
+        </li>
+
+        <li>
+            <div class="card">
+                 <img src="음식4.jpg" width="300" height="300">
+                 <h3>육전<p id="test" onclick="func()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♥</p></h3>
+                 <p>소고기의 깊은 맛이 살아있는 담백한</p>
+            </div>
+        </li>
+
+        <li>
+            <div class="card">
+                 <img src="음식12.jpg" width="300" height="300">
+                 <h3>달걀 샌드위치<p id="test" onclick="func()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♥</p></h3>
+                 <p>자극적이지 않은 고소하고 달달한</p>
+            </div>
+        </li>
+
+        <li>
+            <div class="card">
+                  <img src="음식11.jpg" width="300" height="300">
+                  <h3>멘보샤<p id="test" onclick="func()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♥</p></h3>
+                 <p>빵과 새우의 환상궁합</p>
+            </div>
+        </li> 
+        <br><br>
+        <li>
+            <div class="card">
+                 <img src="음식10.jpg" width="300" height="300">
+                 <h3>베이컨 대파 볶음밥<p id="test" onclick="func()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♥</p></h3>
+                 <p>집에 있는 재료로 뚝딱 만들 수 있는</p>
+            </div>
+        </li>
+
+        <li>
+            <div class="card">
+                 <img src="음식9.jpg" width="300" height="300">
+                 <h3>초코칩 쿠키컵<p id="test" onclick="func()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♥</p></h3>
+                 <p>쿠키도 먹고 음료도 함께 먹을 수 있는</p>
+            </div>
+        </li>
+
+        <li>
+            <div class="card">
+                 <img src="음식7.jpg" width="300" height="300">
+                 <h3>차돌 비빔국수<p id="test" onclick="func()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♥</p></h3>
+                 <p>꾸입맛 없을 때 한끼 뚝딱할 수 있는</p>
+            </div>
+        </li>
+
+        <li>
+            <div class="card">
+                 <img src="음식8.jpg" width="300" height="300">
+                 <h3>피자돈까스<p id="test" onclick="func()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♥</p></h3>
+                 <p>맛있는 조합인 피자와 돈까스</p>
+            </div>
+        </li>
+
+
+        
+    </ul>
+    <script>
+        function func(){
+            e= document.getElementById("test");
+            e.style.color="orange";
+        }
+    </script>
+</body>
+</html>

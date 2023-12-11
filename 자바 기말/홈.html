@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     ul li{
+        display: inline-block;
+        list-style: none;
+     }
+
+     #환영{
+        background-color: rgb(253, 204, 113);
+        color: rgb(255, 255, 255);
+        width: 1285px;
+        height: 30px;
+        margin-left: 40px;
+        margin-bottom: 40px;
+        font-weight: 400;
+        text-align: center;
+     }
+
+     hr{
+        width: 600px;
+        height: 1.5px;
+        background-color:  rgb(255, 195, 83);
+        border: none;
+     }
+
+     h2{
+        text-align: center;
+        color: rgb(255, 195, 83);
+     }
+
+     table{
+        margin: auto;
+        width: 1270px;
+        border-spacing: 80px;
+        text-align: left;
+
+     }
+
+     a{
+        text-decoration: none;
+        color: black;
+     }
+
+     h4{
+        font-size: 20px;
+        margin: 8px;
+     }
+
+     p{
+        color: rgb(85, 85, 85);
+        font-weight: 300;
+     }
+     
+    </style>
+</head>
+<body>
+    <h3 id="환영">&nbsp;&nbsp;&nbsp;계절 밥상에 오신걸 환영합니다.</h3>
+    
+
+    <ul>
+    <li><img src="1.jpg" id="image" height="426" width="640"></li>
+    <li><img src="1.jpg" id="img" height="426" width="640"></li>
+    </ul>
+    <script>
+        let num = 0;
+
+        function show(){
+            if(num==0){
+                document.getElementById("image").src = "2.jpg";
+                num=1;
+            }else if(num==1){
+                document.getElementById("image").src = "3.jpg";
+                num=2;
+            }else if(num==2){
+                document.getElementById("image").src = "4.jpg";
+                num=3;
+            }else{
+                document.getElementById("image").src ="1.jpg";
+                num=0;
+            }
+
+            if(num==0){
+                document.getElementById("img").src = "2.jpg";
+                num=1;
+            }else if(num==1){
+                document.getElementById("img").src = "3.jpg";
+                num=2;
+            }else if(num==2){
+                document.getElementById("img").src = "4.jpg";
+                num=3;
+            }else{
+                document.getElementById("img").src ="1.jpg";
+                num=0;
+            }
+
+            setTimeout('show()',5000);  
+        }
+
+        show();
+    </script>
+
+   <br><br>
+   <br><br>
+   <h2>인기 레시피</h2><hr>
+   
+   <table border="0">
+    <tr>
+    <th><a href=""><img src="음식.jpg" width="300" height="300"><br>
+        <h4>어니언링</h4>
+            <p>&nbsp;&nbsp;동그란 모양에 바삭한 식감이 매력적인</p></th>
+    <th><a href="마늘빵.html"><img src="음식2.jpg" width="300" height="300">
+        <h4>마늘빵</h4>
+        <p>&nbsp;&nbsp;마늘을 사랑하는 한국인의 입맛 저격하는</p></th>
+    <th><a href="로그인 화면.html"><img src="음식3.jpg" width="300" height="300">
+        <h4>고구마 말랭이</h4>
+        <p>&nbsp;&nbsp;쫀득한 식감과 달달한 맛을 품은</p></th>
+   </tr>
+   </table>
+
+
+   <h2>추천 레시피</h2><hr>
+   <table border="0">
+    <tr>
+    <th><a href=""><img src="음식6.jpg" width="300" height="300"><br>
+        <h4>경양식 돈까스</h4>
+            <p>&nbsp;&nbsp;바삭한 식감과 새콤달콤한 소스의 조합</p></th>
+    <th><a href=""><img src="음식5.jpg" width="300" height="300">
+        <h4>두부조림</h4>
+        <p>&nbsp;&nbsp;꾸준히 사랑 받는 밥 반찬 메뉴인</p></th>
+    <th><a href=""><img src="음식4.jpg" width="300" height="300">
+        <h4>육전</h4>
+        <p>&nbsp;&nbsp;소고기의 깊은 맛이 살아있는 담백한</p></th>
+   </tr>
+   </table>
+   
+</body>
+</html>

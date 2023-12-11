@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마늘빵</title>
+
+    <style>
+        body img{
+            text-align: left;
+            margin-left: 50px;
+            margin-top: 10px;
+        }
+
+        ul li{
+        display: inline-block;
+        list-style: none;
+        margin-top: 0px;
+        }
+
+       #dd{
+        margin-left: 40px;
+       }
+
+       h4{
+        margin-bottom: 0px;
+       }
+
+       #test{
+        color: bisque;
+        font-size:70px;
+        margin-top: -100px;
+        margin-bottom: 0px;
+        margin-left: 600px;
+        }
+
+        hr{
+        width: 600px;
+        height: 1.5px;
+        background-color:  rgb(255, 195, 83);
+        border: none;
+        }
+
+        #조리{
+            text-align: center;
+            color:  rgb(255, 195, 83);
+            font-size:30px;
+        }
+
+        .설명{
+            margin-left: 40px;
+            font-size:20px;
+           
+        }
+
+        .번호{
+            margin-left: 40px;
+            color:  rgb(255, 195, 83);
+        }
+
+        div{
+            width: 60px;
+            height: 30px;
+            background-color: orange;
+            transition: width 600s;
+            margin-left: 40px;
+        }
+
+        div:hover{
+            width: 00px;
+        }
+
+        #시간{
+            color: white;
+            margin-left: 13px;
+            margin-top: 5px;
+            
+        }
+
+        #끝{
+            width: 500px;
+            height: 1.5px;
+            background-color:  rgb(255, 195, 83);
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><img src="음식2.jpg" id="image"  width="500" height="500" ></li>
+        <li id="dd"><h2>마늘빵</h2><h3>마늘을 사랑하는 한국인의 입맛 저격하는<p id="test" onclick="func()">♥</p></h3>
+        <br><br>마늘과 버터, 파슬리 조합의 비주얼과 독특한 풍미가 핵심. <br>
+        마늘을 잘 먹지 않거나 싫어하는 사람이더라도 마늘빵만큼은 좋아하는 사람이 있는.<br>
+        기본적으로 우유나 커피, 오렌지 주스와 궁합이 좋은. <br>
+        바삭바삭한 식감의 마늘빵은 따뜻한 우유, 커피와 더해지면 적당한 바삭바삭함을 유지할 수 있다.<br><br>
+        <fieldset style="width:670px; ">
+        <legend style="color: orange; font-weight: 600; font-size: 18px;" >&nbsp;&nbsp;필요한 재료&nbsp;&nbsp;</legend><h4>기본재료&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;소스재료</h4>
+        바게트1/2, 파슬리 약간&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;무염버터 3큰술, 설탕 1큰술, 간마늘 1+1/2큰술<br><br></fieldset><br></li>
+    </ul>
+
+    <script>
+        let num = 0;
+
+   function show(){
+    if(num==0){
+        document.getElementById("image").src = "음식2.jpg";
+        num=1;
+    }else{
+         document.getElementById("image").src ="마늘빵2.jpg";
+         num=0;
+         }
+         setTimeout('show()',5000);  
+        }
+
+        show();
+    </script>
+
+    <script>
+        function func(){
+            e= document.getElementById("test");
+            e.style.color="orange";
+        }
+    </script>
+    <br><br><br><br>
+    <hr>
+    <br><br>
+    <h3 id="조리">조리순서</h3>
+    <br>
+    <ul>
+        <li><img src="레시피1.jpg" width="300" height="300" ></li>
+        <li><h1 class="번호">1.</h1><br><br><p class="설명">바게트를 1cm 두께로 어슷하게 썰어주세요.</p><br><br><br></li>
+    </ul>
+
+    <ul>
+        <li><img src="레시피2.jpg" width="300" height="300" ></li>
+        <li><h1 class="번호">2.</h1><br><br><p class="설명">실온에 둔 부드러운 버터에 소스 재료를 섞어 마늘 버터를 만들어 주세요.</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Tip. 버터가 딱딱할 때는 전자레인지에 10초 정도 돌려서 사용해주세요.)</p><br><br><br></li>
+    </ul>
+
+    <ul>
+        <li><img src="레시피3.jpg" width="300" height="300" ></li>
+        <li><h1 class="번호">3.</h1><br><br><p class="설명">법랑 접시에 바게트를 놓고 소스를 발라주세요.</p><br><br><br></li>
+    </ul>
+
+    <ul>
+        <li><img src="레시피4.jpg" width="300" height="300" ></li>
+        <li><h1 class="번호">4.</h1><br><br><p class="설명">법랑 접시를 2단에 넣고 광파오븐 수동요리<오븐>에서 180도로 10분간 구워주세요.</p><div><p id="시간">10분</p><hr id="끝"><br></div><br><br></li>
+    </ul>
+    
+
+</body>
+</html>
